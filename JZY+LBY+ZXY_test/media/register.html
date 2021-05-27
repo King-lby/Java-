@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>河南财经政法大学的人员注册</title>
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+	 <script type="text/javascript" src="js/register.js"></script>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		h1, h2, h3, h4, h5, h6, strong{
+			font-weight:800;
+			font-size:20px;
+			vertical-align:middle;
+			color: black;
+		}
+		#all{
+			width: 100%;
+			height: 800px;
+			position: relative;
+		}
+		#all img{
+			width: 100%;
+			position: absolute;
+		}
+		#a{
+			width: 500px ;
+			margin: 10px 450px;
+			height: 700px;
+			position: absolute;
+		}
+		.denglu{
+			width: 500px;
+			padding: 30px ;
+			line-height: 40px;
+			margin: 0px  100px;
+			position: absolute;
+		}
+		.denglu input{
+			width: 130px;
+			height: 20px;
+		}
+		.button{
+			width: 200px ;
+			margin: 0px 100px;
+			height: 30px;
+		}
+		.button input{
+			width: 0px ;
+			height: 20px;
+		}
+		.denglu span{
+			display: none;
+			color: red;
+		}
+		.back{
+			margin: 30px 0px 0px 0px;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div id="all"  style="z-index: 5">
+			<form>
+				<div id="a" style="z-index: 10">
+					<fieldset>
+						<legend><h3>注册填写</h3></legend>
+						<div class="denglu" , style="z-index: 20">
+						    用户名：<input type="text" name="username" id="username" onblur="f1()" placeholder="手机号/账号"; style="font-size: 5pt;"><span id="one">此处不能为空！</span><br>
+		                    密码：<input type="password" name="psw1" id="psw1" placeholder="密码   (忘记密码,请重新注册)" style="font-size: 5pt;"><br>
+		                    确认密码：<input type="password" name="psw2" id="psw2" onblur="f2();" placeholder="请输入同样的密码" style="font-size: 5pt;"><span id="two">两次密码不一致，请重新输入！</span><br>
+							上传本人照片：<input type = "file" name = "potato" /></br>
+							年龄：<input type = "number" name = "mynumber" max = "100" min = "0" size = "5"><br/>
+							邮箱：<input type = "email" name = "myemail"><br/>
+							电话：<input type = "tel" name = "mytel"><br/>
+							最爱的颜色：<input type = "color" name = "favcolor"><br/>
+							生日日期：<input type = "date" /><br/>
+							学历:<input type = "text" name = "education" placeholder = "请输入您的学历" list = "education_list" size = "20"/>
+								<datalist id = "education_list">
+									<option value = "专科"></option>
+									<option value = "本科"></option>
+									<option value = "研究生"></option>
+									<option value = "硕士生"></option>
+									<option value = "博士生"></option>
+								</datalist><br/>
+							<input name = "submit" type = "submit" value = "提交">
+							<input name = "reset" type = "reset" value = "取消"><br/>
+							<div class="back">
+	                        	<a href="index.html"><h5>back</h5></a>
+	                    	</div>
+                   		</div>
+					</fieldset>
+				</div>
+		   </form>
+		</div>
+   </div>
+</body>
+</html>
